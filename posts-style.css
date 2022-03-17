@@ -1,0 +1,86 @@
+
+/*HEADER*/
+body {
+    background-color: rgb(63, 63, 63);
+}
+
+.logo {
+
+    color: black;
+    font-size: 50px;
+    background-color: white;
+    text-decoration: none;
+
+}
+html {
+    overflow-x: hidden;
+}
+header
+{
+    overflow: hidden;
+    z-index: 1000;
+    background: #000000;
+    width: 100vw;
+    min-width:  800px; /* Минимальная  ширина */
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px;  /* Поля вокруг текста */
+
+    height: auto;
+    margin: 0 auto;
+}
+
+.header-ul {
+    list-style:  none;
+    margin:  -10px;
+    padding: 20px;
+}
+.Categories {
+    color: white;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px ;
+    text-decoration: none;
+}
+
+.Categories:hover
+{
+    color: rgb(161, 161, 255);
+}
+
+header ul li
+{
+    display: inline;
+}
+
+/* Posts */
+
+body ul
+{
+    list-style: none;
+}
+.post
+{
+
+ background-color: rgba(9,9,9,0.57);
+    width: 60%;
+    align-content: center;
+    margin: 0px 0px 50px 25%;
+}
+.title
+{
+    text-align: center;
+    color: white;
+    font-family: Arial;
+    padding: 10px;
+    font-size: 50px;
+}
+.text {
+
+    color: white;
+    font-family: "Roboto Regular";
+    text-align: start;
+    padding: 10px 50px 50px 50px;
+    font-size: 25px;
+}

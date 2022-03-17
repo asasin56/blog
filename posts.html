@@ -13,36 +13,25 @@
 </head>
 <header class="header">
     <ul class="header-ul">
-        <li><a href="index.php" class="logo">asasin56</a><li>
-        <li><a href="posts.php" class="Categories">Posts</a></li>
+        <li><a href="index.html" class="logo">asasin56</a><li>
+        <li><a href="posts.html" class="Categories">Posts</a></li>
         <li><a class="Categories"  href="not-done-yet.php">Articles</a></li>
-        <li ><a href="not-done-yet.php" class="Categories">Games</a></li>
-        <li><a href="not-done-yet.php" class="Categories">About</a> </li>
+        <li ><a href="not-done-yet.html" class="Categories">Games</a></li>
+        <li><a href="not-done-yet.html" class="Categories">About</a> </li>
     </ul>
 </header>
 <body>
 <ul>
-<?php
 
-         $conection = mysqli_connect('127.0.0.1', 'root', '', 'blog'); 
-         if($conection == false)
-         {
-            echo "sdfgfsd";
-            echo mysqli_connect_eror();
-            exit();
-         }
-
-        
-       $result = mysqli_query($conection, "SELECT * FROM `posts`"); 
-
-  while ($record = mysqli_fetch_assoc($result)) {
-    echo '<li class="post"> <h1 class="title">' . $record['title'] .
-    '</h1> <p class="text">' . $record['text'] . ' </p> </li> ';
-    
-  }
-?>
- 
-
+ <li class="post">
+     <h1 class="title">
+         First  post
+         </h1>
+     <p class="text">
+         Hello! I am indie game developer and there will publish posts about my games and projects. This is 1st version of blog and a lot of features not released yet.<br>
+         If you want to know about new posts, you can join to <a href="https://discord.gg/S5VnSZyCDw">discord server</a>
+     </p>
+    </li>
     </ul>
 
 </body>
